@@ -1,0 +1,535 @@
+@import url('mixins.less');
+
+/* Table of Contents:
+   1. Tablet landscape
+   2. Tablet portrait
+   3. Mobile landscape
+   4. Mobile portrait
+*/
+
+
+
+/*==========================================================================
+1. Tablet landscape
+===========================================================================*/
+
+.switcher {
+	display:none;
+}
+
+@media (max-width: 1700px) {
+	.header-section {
+		margin-left: -500px;
+		width: 1000px;
+	}
+	
+	#flexslider-1 {
+		.flex-direction-nav {
+			a.flex-prev {
+				left: 50px;
+			}
+			a.flex-next {
+				right: 50px;
+			}
+		}
+	}
+}
+
+@media (max-width: 1250px) {
+	body {
+		min-width: 320px;
+	}
+	
+	.switcher {
+		display: inline-block;
+	}
+	
+	h2 {
+		white-space: normal;
+		
+		&:before,
+		&:after {
+			display: none;
+		}
+	}
+	
+	h3,
+	#block-tm-follow-user h2,
+	.subtitle,
+	.field-name-field-msg-subtitle {
+		font-size: 53px;
+		line-height: 63px;
+	}
+	
+	.front .header-section {
+		padding-top: 185px;
+	}
+	
+	.header-section {
+		margin-left: -380px;
+		width: 760px;
+	}
+	
+	#superfish-1 {
+		padding-top: 80px;
+
+		.front & {
+			padding-top: 125px;
+		}
+	}
+	
+	#flexslider-1 {
+		.slides li img {
+			max-height: 748px;
+			min-height: 748px;
+		}
+		
+		.flex-direction-nav {
+			a.flex-prev {
+				left: 50px;
+			}
+			a.flex-next {
+				right: 50px;
+			}
+		}
+	}
+	
+	#block-views-experience-block .views-field-title {
+		padding-top: 0;
+	}
+	
+	#section_5_wrapper h6 {
+		line-height: 21px;
+		margin-bottom: 5px;
+	}
+	
+	#block-views-blog-section {
+		.views-field-created-1 {
+			padding-top: 0;
+		}
+		
+		.views-field-body {
+			margin-bottom: 5px;
+		}
+	}
+}
+
+
+
+/*==========================================================================
+2. Tablet portrait
+===========================================================================*/
+
+@media (max-width: 995px) {
+	.page-page-404 .panel-col-first {
+		font-size: 160px;
+	}
+	
+	.stickup{
+		box-shadow: none !important;
+		position: static !important;
+	}
+	
+	.pseudoStickyBlock{
+		display: none !important;
+		height: 0 !important;
+	}
+	
+	#backtotop {
+		display: none !important;
+	}
+	
+	.front .header-section {
+		padding-top: 100px;
+	}
+	
+	.header-section {
+		left: 0;
+		margin-left: 0;
+		padding: 0 15px;
+		right: 0;
+		width: auto;
+	}
+	
+	#superfish-1 {
+		padding-top: 80px;
+		
+		.front & {
+			padding-top: 70px;
+		}
+	}
+	
+	#flexslider-1 {
+		.slides li img {
+			max-height: 570px;
+			min-height: 570px;
+		}
+		
+		.flex-direction-nav {
+			bottom: 30px;
+			left: 0;
+			position: absolute;
+			right: 0;
+			text-align: center;
+			
+			li {
+				display: inline-block;
+				margin-left: 20px;
+				
+				&:first-child {
+					margin-left: 0;
+				}
+			}
+
+			a {
+				background-size: 100% auto;
+				height: 50px;
+				margin-top: -25px;
+				position: static;
+				width: 25px;
+				
+				&:hover {
+					background-position: center -50px;
+				}
+				
+				&.flex-prev {
+					left: 20px;
+				}
+				&.flex-next {
+					right: 20px;
+				}
+			}
+		}
+	}
+	
+	#main,
+	#section_1_wrapper .region,
+	#section_2_wrapper .region,
+	#section_3_wrapper .region,
+	#section_4_wrapper .region,
+	#section_5_wrapper .region,
+	#section_7_wrapper .region,
+	#section_8_wrapper .region,
+	#section_10_wrapper .region {
+		padding: 50px 0;
+	}
+	
+	h2,
+	#section_2_wrapper h2,
+	#section_4_wrapper h2 {
+		font-size: 55px;
+		line-height: 65px;
+	}
+	
+	h3,
+	#block-tm-follow-user h2,
+	.subtitle,
+	#section_2_wrapper h3,
+	#section_4_wrapper h3,
+	#section_7_wrapper h3,
+	.field-name-field-msg-subtitle {
+		font-size: 50px;
+		line-height: 60px;
+	}
+	
+	#block-views-experience-block {
+		.views-field-field-image {
+			margin-right: 20px;
+		}
+		
+		.views-field-body {
+			overflow: visible;
+		}
+	}
+	
+	#block-views-blog-section {
+		.views-field {
+			overflow: hidden;
+		}
+		
+		.views-row.views-row-odd {
+			padding-right: 20px;
+		
+			.views-field-field-blog-media {
+				margin-right: 20px;
+			}
+		}
+		
+		.views-row.views-row-even {
+			padding-left: 20px;
+
+			.views-field-field-blog-media {
+				margin-left: 20px;
+			}
+		}
+		
+		.views-field-field-blog-media {
+			overflow: hidden;
+			
+			img {
+				height: 300px;
+				max-width: inherit;
+			}
+		}
+		
+		.views-field-created-1 {
+			font-size: 30px;
+			line-height: 36px;
+			
+			.day {
+				font-size: 50px;
+				line-height: 60px;
+			}
+		}
+	}
+	
+	.isotope-element {
+		max-width: 25%;
+	}
+}
+
+
+
+/*==========================================================================
+3. Mobile landscape
+===========================================================================*/
+
+@media (max-width: 767px) {
+	#superfish-1 {
+		display: none;
+	}
+
+	.select-menu {
+		display: block !important;
+		width: 100%;
+	}
+
+	.comment-wrapper {
+		overflow: visible;
+	}
+
+	.user-picture {
+		margin-bottom: 12px;
+	}
+
+	.views-field-field-portfolio-image {
+		pointer-events: none;
+	}
+
+	.panel-2col .panel-col-first,
+	.panel-2col .panel-col-last {
+		float: none;
+		width: 100%;
+
+		.inside {
+			margin: 0;
+		}
+	}
+
+	.page-page-404 .panel-col-first {
+		font-size: 170px;
+		line-height: 170px;
+		text-align: center;
+	}
+
+	.filter-help {
+		float: none;
+		margin-bottom: 15px;
+		padding-top: 0;
+	}
+	
+	.mobile-two-column .views-row {
+		float: left !important;
+		width: 46% !important;
+		margin-right: 4% !important;
+		
+		&.even {
+			margin-right: 0 !important;
+		}
+		
+		&.odd {
+			clear: left;
+		}
+	}
+	
+	.contact-form {
+		.form-type-textfield {
+			float: none;
+			margin-left: 0;
+			width: 100%;
+		}
+	}
+	
+	#header {
+		min-height: 320px;
+	}
+	
+	.header-section {
+		padding-top: 35px;
+
+		.front & {
+			padding-top: 40px;
+		}
+	}
+	
+	#block-superfish-1 {
+		padding-top: 40px;
+	}
+	
+	#logo {
+		margin: 0 auto;
+		width: 250px;
+	}
+	
+	#flexslider-1 {
+		.slides li img {
+			max-height: 370px;
+			min-height: 370px;
+		}
+		
+		.flex-caption {
+			position: static;
+			width: auto;
+		}
+		
+		.flex-direction-nav {
+			bottom: 20px;
+		}
+	}
+	
+	#block-views-experience-block .views-field-field-image {
+		float: none;
+		margin: 0 0 30px;
+		max-width: 100%;
+	}
+	
+	#block-views-blog-section {
+		.views-row {
+			padding-bottom: 30px;
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+		}
+		
+		.views-field-field-blog-media {
+			float: none !important;
+			margin: 0 0 20px !important;
+			max-width: 100%;
+			
+			img {
+				height: auto;
+				max-width: 100%;
+			}
+		}
+	}
+	
+	.block-contact-form .contact-form .form-type-textfield {
+		margin-left: 0;
+		width: 100%;
+	}
+	
+	.node-submitted .node-comments {
+		display: block;
+		float: none;
+	}
+	
+	#comments .indented {
+		margin-left: 0;
+	}
+	
+	.isotope-element {
+		max-width: 50%;
+	}
+}
+
+
+
+/*==========================================================================
+4. Mobile portrait
+===========================================================================*/
+
+@media (max-width: 479px) {
+	.node-teaser .field-type-file,
+	.node-teaser .field-type-image,
+	.node-employee .field-type-image {
+		float: none;
+		margin: 0 0 20px;
+		max-width: inherit;
+		width: auto;
+	}
+
+	#comments {
+		.comment .comment-wrapper {
+			overflow: visible;
+		}
+
+		.indented {
+			margin-left: 0;
+		}
+	}
+
+	.page-tracker #main-wrapper .content {
+		overflow-x: scroll;
+
+		table.sticky-header {
+			display: none !important;
+		}
+	}
+
+	.page-forum #forum {
+		overflow-x: scroll;
+
+		td.forum .icon {
+			float: none;
+			margin: 0 0 5px;
+		}
+	}
+
+	.field-name-field-testi-image {
+		float: none;
+		margin: 0 0 20px;
+		max-width: inherit;
+	}
+	
+	.mobile-two-column .views-row {
+		float: none;
+		width: 100% !important;
+		margin-right: 0 !important;
+	}
+	
+	#header {
+		min-height: 280px;
+	}
+	
+	#logo {
+		width: 200px;
+	}
+	
+	#flexslider-1 {
+		.slides li img {
+			max-height: 340px;
+			min-height: 340px;
+		}
+	}
+	
+	.isotope-element {
+		max-width: 100%;
+	}
+	
+	h2,
+	#section_2_wrapper h2,
+	#section_4_wrapper h2 {
+		font-size: 45px;
+		line-height: 55px;
+	}
+	
+	h3,
+	#block-tm-follow-user h2,
+	.subtitle,
+	#section_2_wrapper h3,
+	#section_4_wrapper h3,
+	#section_7_wrapper h3,
+	.field-name-field-msg-subtitle {
+		font-size: 40px;
+		line-height: 50px;
+	}
+}
